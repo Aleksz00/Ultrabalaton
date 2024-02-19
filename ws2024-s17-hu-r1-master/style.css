@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   background: url(mediafiles/images/ub2023_2.png)no-repeat;
+   background-size: cover;
+   background-position:center;
+}
+header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    color: #000;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: orange;
+    border-radius: 20px;
+}
+header .navigation a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    background: orange;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+header .navigation a:not(:last-child){
+    margin-right:30px;
+}
+
+header .navigation a:hover{
+    background: red;
+}
+
+.content{
+    max-width: 650px;
+    margin: 60px 100px;
+}
+
+.content .info h2{
+    color: rgb(169, 47, 2);
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    background: orange;
+    border-radius: 10px;
+}
+.content .info h2 span {
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+   
+}
+.content .info p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-align: justify;
+    background: orange;
+    border-radius: 10px;
+}
+.content .info-btn{
+    color: #fff;
+    background: red;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.content .info-btn:hover{
+    background: rgb(220, 54, 54);
+}
+.media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: orange;
+    border-radius: 20px;
+}
+
+.media-icons a{
+    position: relative;
+    color: #111;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.media-icons img{
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+.media-icons a:not(:last-child){
+    margin-right: 60px;
+}
+.media-icons a:hover{
+    transform: scale(1.5);
+}
+ img{
+    margin-right: -500px;
+    margin-bottom: 500px;
+    float: right;
+    height: 350px;
+    width: 350px;
+}
+@media(min-width:1920px){
+    header .navigation{
+        display: none;
+    }
+    
+    header .logo{
+        position: absolute;
+        bottom: -6px;
+    }
+    .content .info h2{
+        font-size: 60px;
+        line-height: 50px;
+    }
+    .content .info h2 span{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .content .info p{
+        font-size: 44px;
+    }
+}
+@media(min-width:768px){
+    .content .info h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .content .info h2 span{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .content .info p{
+        font-size: 44px;
+    }
+}
+@media(min-width:360px){
+    .content .info h2{
+        font-size: 35px;
+        line-height: 30px;
+    }
+    .content .info h2 span{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .content .info p{
+        font-size: 20px;
+    }
+    content .info-btn{
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+    }
+}
